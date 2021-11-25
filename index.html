@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 1 - bootstrap</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Weddings</a>
+                <button class="navbar-toggler" type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav mx-2">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                <i class="bi bi-house-door-fill"></i>
+                                &nbsp;Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#gallery" class="nav-link">
+                                <i class="bi bi-info-circle-fill"></i>
+                                &nbsp;Gallery
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#harga" class="nav-link">
+                                <i class="bi bi-currency-dollar"></i>
+                                &nbsp;Pricing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">
+                                <i class="bi bi-telephone-fill"></i>
+                                &nbsp;Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /Navbar -->
+
+        <!-- Hero Image -->
+        <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+            <div class="content text-center">
+                <h1 class="text-white text-shadow">Weddings</h1>
+                <p class="text-white text-shadow">Pingin nikah tapi gamau repot? <br> Percayakan semua kebutuhan Pernikahan anda kepada kami</p>
+                <a class="btn btn-lg btn-outline-light" href="#harga">Book Now!</a>
+            </div>
+        </div>
+        <!-- /Hero Image -->
+    </header>
+    <!-- Main -->
+    <main>
+        <section class="container-fluid bg-light p-5" id="gallery">
+            <h2 class="display-6 text-center">Gallery</h2>
+            <hr class="mb-5" width="100px" style="margin: auto;">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4"">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/gallery/1.jpg" alt="Gambar 1">
+                            <div class="card-body">
+                                <strong>Hinata & Naruto</strong>
+                                <br>
+                                <small class="text-secondary">Saturday, 17 May 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/gallery/2.jpg" alt="Gambar 2">
+                            <div class="card-body">
+                                <strong>Sakura & Sasuke</strong>
+                                <br>
+                                <small class="text-secondary">Monday, 22 November 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/gallery/3.jpg" alt="Gambar 3">
+                            <div class="card-body">
+                                <strong>Temari & Shikamaru</strong>
+                                <br>
+                                <small class="text-secondary">Sunday, 15 November 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/gallery/4.jpg" alt="Gambar 4">
+                            <div class="card-body">
+                                <strong>Ino & Sai</strong>
+                                <br>
+                                <small class="text-secondary">Sunday, 15 September 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/gallery/5.jpg" alt="Gambar 5">
+                            <div class="card-body">
+                                <strong>Rin & Obito</strong>
+                                <br>
+                                <small class="text-secondary">Thursday, 18 November 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="assets/img/gallery/6.jpg" alt="Gambar 6">
+                            <div class="card-body">
+                                <strong>Sarada & Boruto</strong>
+                                <br>
+                                <small class="text-secondary">Sunday, 12 November 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container p-5" id="harga">
+            <h2 class="display-6 text-center">Pricing</h2>
+            <hr class="mb-5" width="100px" style="margin: auto;">
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h3 class="my-0 fw-normal">Murah</h3>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Rp.9.600.000</h3>
+                            <p class="text-danger"><small style="text-decoration: line-through;">Rp.12.000.000</small>&nbsp;<strong>20% Off</strong></p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Make Up</li>
+                                <li>Photographer</li>
+                                <li>Videographer</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-dark">Order Now !</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h3 class="my-0 fw-normal">Standart</h3>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Rp.15.000.000</h3>
+                            <p class="text-danger"><small style="text-decoration: line-through;">Rp.20.000.000</small>&nbsp;<strong>25% Off</strong>
+                            </p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Make Up</li>
+                                <li>Photographer</li>
+                                <li>Videographer</li>
+                                <li>Invitation</li>
+                                <li>Food & Beverage</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-dark">Order Now !</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-white bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">VIP</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="fw-bold">Rp.24.500.000</h3>
+                            <p class="text-danger"><small style="text-decoration: line-through;">Rp.24.500.000</small>&nbsp;<strong>30% Off</strong>
+                            </p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Make Up</li>
+                                <li>Photographer</li>
+                                <li>Videographer</li>
+                                <li>Invitation</li>
+                                <li>Food & Beverage</li>
+                                <li>Decoration</li>
+                                <li>Hotel</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Order Now !</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="container-fluid bg-light p-5" id="contact">
+            <h2 class="display-6 text-center">Contact</h2>
+            <hr class="mb-5" width="100px" style="margin: auto;">
+            <div class="container">
+                <form action="" method="post">
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Insert Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Insert Your Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Insert Subject Of Message">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea name="message" id="message" class="form-control" rows="5" placeholder="Insert Your Message"></textarea>
+                    </div>
+                </form>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+        </section>
+        <!-- /Contact -->
+    </main>
+    <!-- /Main -->
+    <!-- Footer -->
+    <footer class="bd-footer py-2 mt-5 bg-dark">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-5 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+                    <span class="fs-5 text-light">Weddings</span>
+                    </a>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">Percayakan semua kebutuhan Pernikahan anda kepada kami</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill"></i> Location : Pekalongan, Jawa Tengah</li>
+                        <li class="mb-2"><i class="bi bi-facebook"></i> Facebook : Weddings</li>
+                        <li class="mb-2"><i class="bi bi-instagram"></i> Instagram : @Weddings</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5 class="text-light">Info</h5>
+                    <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">About Weddings</a></li>
+                    <li class="mb-2"><a href="/">Carrers</a></li>
+                    <li class="mb-2"><a href="/">Commitment To Quality</a></li>
+                    <li class="mb-2"><a href="/">Diversity, Equity & Inclusion</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5 class="text-light">Our Partners</h5>
+                    <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">Photographer Program</a></li>
+                    <li class="mb-2"><a href="/">Wedding Planner Program</a></li>
+                    <li class="mb-2"><a href="/">Venue Program</a></li>
+                    <li class="mb-2"><a href="/">Parcel Program</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5 class="text-light">Blog</h5>
+                    <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">Tips & Trick</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr style="color:#6c757d;">
+        <div class="container text-secondary d-flex justify-content-between align-items-center">
+            <div class="copy">Copyright &copy;&nbsp;2021,Weddings. All Right Reserved</div>
+            <div class="author ">Author by: Revangga Aji Pratama</div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
